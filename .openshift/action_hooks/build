@@ -13,7 +13,7 @@ cd $OPENSHIFT_DATA_DIR
 
 if [ ! -f "$OPENSHIFT_DATA_DIR/odoo-${ODOO_VERSION}-${ODOO_TIMESTAMP}.zip" ]; then
   echo "Odoo will be downloaded now."
-  wget $ODOO_URL
+  wget $ODOO_URL -O odoo-${ODOO_VERSION}.zip
 
   unzip -o $OPENSHIFT_DATA_DIR/odoo-${ODOO_VERSION}.zip
 
