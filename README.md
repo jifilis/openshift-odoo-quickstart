@@ -13,7 +13,7 @@ $ rhc app create odoo python-2.7 postgresql-9
 Then, merge and push this repo into your new app. Please be patient, this operation may last for a long time.
 
 ```
-$ cd openerp/
+$ cd odoo/
 $ git remote add upstream https://github.com/thiagoalmeidasa/openshift-odoo-quickstart.git
 $ git pull -s recursive -X theirs upstream 8.0
 $ git push
