@@ -24,9 +24,11 @@ if [ ! -f "$OPENSHIFT_DATA_DIR/odoo-${ODOO_VERSION}-${ODOO_TIMESTAMP}.zip" ]; th
   ln -s $OPENSHIFT_DATA_DIR/odoo/requirements.txt $OPENSHIFT_REPO_DIR/requirements.txt
 
   source $OPENSHIFT_PYTHON_DIR/virtenv/bin/activate
+  sed -i '/python-ldap/d' $OPENSHIFT_REPO_DIR/requirements.txt
   pip install -r $OPENSHIFT_REPO_DIR/requirements.txt
   
   cd $OPENSHIFT_DATA_DIR/odoo
+  sed -i '/python-ldap/d' setup.py
   python setup.py install
 fi
 
