@@ -7,7 +7,7 @@ This quickstart contains an OpenERP installation ready to run on OpenShift.
 First, create an application with PostgreSQL:
 
 ```
-$ rhc app create odoo python-2.7 postgresql-9
+$ rhc app create odoo python-2.7 postgresql-9.2
 ```
 
 Then, merge and push this repo into your new app. Please be patient, this operation may last for a long time.
