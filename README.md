@@ -14,7 +14,7 @@ Then, merge and push this repo into your new app. Please be patient, this operat
 
 ```
 $ cd odoo/
-$ git remote add github https://github.com/thiagoalmeidasa/openshift-odoo-quickstart.git
+$ git remote add github https://github.com/jifilis/openshift-odoo-quickstart.git
 $ git pull -s recursive -X theirs github 8.0
 $ git push
 ```
